@@ -42,10 +42,10 @@ Customer Churn (khách hàng rời bỏ) là hiện tượng khách hàng ngừn
 | | | |
 |---|---|---|
 | ![RowNumber](images/Figure_1.png) | ![CustomerId](images/Figure_2.png) | ![Surname](images/Figure_3.png) |
-| ![CreditScore](images/Figure_4.png) | ![Geography](images/Figure_18.png) | ![Gender](images/Figure_5.png) |
-| ![Age](images/Figure_6.png) | ![Tenure](images/Figure_7.png) | ![Balance](images/Figure_8.png) |
-| ![NumOfProducts](images/Figure_17.png) | ![HasCrCard](images/Figure_9.png) | ![IsActiveMember](images/Figure_10.png) |
-| ![EstimatedSalary](images/Figure_11.png) | ![Exited](images/Figure_12.png) | |
+| ![CreditScore](images/Figure_4.png) | ![Geography](images/Figure_5.png) | ![Gender](images/Figure_6.png) |
+| ![Age](images/Figure_7.png) | ![Tenure](images/Figure_8.png) | ![Balance](images/Figure_9.png) |
+| ![NumOfProducts](images/Figure_10.png) | ![HasCrCard](images/Figure_11.png) | ![IsActiveMember](images/Figure_12.png) |
+| ![EstimatedSalary](images/Figure_13.png) | ![Exited](images/Figure_14.png) | |
 
 ## 🔍 Phân tích tương quan chính (với `Exited`)
 
@@ -58,7 +58,7 @@ Customer Churn (khách hàng rời bỏ) là hiện tượng khách hàng ngừn
 
 Ghi chú: `Balance` và `NumOfProducts` có tương quan âm đáng chú ý với nhau (r = −0.30).
 
-![Correlation Matrix](images/Figure_16.png)
+![Correlation Matrix](images/Figure_15.png)
 
 ##  Tiền xử lý dữ liệu
 
@@ -100,11 +100,11 @@ Tập đặc trưng cuối cùng: **12 biến** (bao gồm 2 đặc trưng mới
 | Random Forest | 1556 | 37 | 226 | 181 |
 | XGBoost | 1545 | 48 | 218 | 189 |
 
-![Confusion Matrix](images/Figure_13.png)
+![Confusion Matrix](images/Figure_16.png)
 
 ### Đường cong ROC
 
-![ROC Curve](images/Figure_14.png)
+![ROC Curve](images/Figure_17.png)
 
 ###  Mô hình được chọn: **XGBoost**
 
@@ -120,7 +120,7 @@ Các yếu tố ảnh hưởng mạnh nhất đến churn (theo thứ tự):
 4. **Geography_Germany** — khách hàng tại Đức có xu hướng churn cao hơn
 5. Gender_Male, BalanceSalaryRatio, Balance, TenureByAge, EstimatedSalary, CreditScore...
 
-![SHAP Summary Plot](images/Figure_15.png)
+![SHAP Summary Plot](images/Figure_18.png)
 
 ##  Phân tích Customer Retention (phân nhóm rủi ro)
 
